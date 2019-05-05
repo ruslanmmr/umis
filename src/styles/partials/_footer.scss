@@ -1,0 +1,129 @@
+.footer {
+  background-color: #e6e6e6;
+  font-size: 14px;
+  margin-top: 60px;
+  .contact-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__btn {
+    font-size: 15px;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    filter: grayscale(100%);
+    opacity: 0.7;
+  }
+  &__container {
+    padding: 65px 0 30px 0;
+  }
+  &__top {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__section {
+    max-width: 270px;
+    padding-bottom: 35px;
+  }
+  &__section-title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 13px;
+    }
+  }
+  &__link {
+    color: #000;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+.payment {
+  &__list {
+    margin: 0;
+    padding: 0;
+    margin: 0 -5px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  &__item {
+    padding: 5px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      max-width: 90px;
+    }
+  }
+}
+
+@media all and(max-width: 992px) {
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__section {
+    &:last-child {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media all and(max-width: 768px) {
+  .footer__section {
+    &:nth-child(4) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    order: 2;
+    margin-top: 50px;
+  }
+}
+@media all and(max-width: 460px) {
+  .footer__logo {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .logo__description {
+      border: 0;
+      padding: 20px 0 0 0;
+      br {
+        display: none;
+      }
+    }
+  }
+}
