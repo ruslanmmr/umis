@@ -1,0 +1,17 @@
+.about {
+  padding: 60px 0 40px 0;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $contrast-color;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 200px);
+    left: 0;
+  }
+  &__title {
+    margin-bottom: 30px;;
+  }
+}

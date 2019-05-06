@@ -1,10 +1,11 @@
 $(document).ready(function () {
   lazy();
-  autoBlockHeight();
-  reviews();
+  cover();
+  banner()
+  gallery();
   nav();
-  home();
-  $(".input_phone").mask("(999) 999-99-99");
+  popup();
+  scrollpage();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -16,7 +17,7 @@ var innerWidth = $('body').innerWidth();
 //nav
 function nav() {
   var $navButton = $('.nav-open'),
-    $navClose = $('.nav__close'),
+    $navClose = $('.nav__close, .scroll-button'),
     $nav = $('.header__nav'),
     $page = $('.wrapper__container'),
     $overlay = $('.overlay')
@@ -59,57 +60,38 @@ function lazy() {
     visibleOnly: false,
     threshold: '500',
     effect: 'fadeIn',
-    effectTime: '300'
-  });
-}
-//blocks
-function autoBlockHeight() {
-  var $block = $(".opportunities-block__container"),
-        $block1 = $(".opportunities-block__container_1"),
-        $block2 = $(".opportunities-block__container_2");
-
-  if(innerWidth > 576) {
-    resize();
-  }
-  $(window).resize(function () {
-    if(innerWidth > 576) {
-      resize();
-    } else {
-      $block.css('height', 'auto')
+    effectTime: '300',
+    afterLoad: function() {
+      cover();
     }
   });
-
-  function resize() {
-    $block.css('height', 'auto');
-    var mh1 = 0,
-        mh2 = 0;
-
-    $block1.each(function () {
-      var h_block = parseInt($(this).height());
-      if(h_block > mh1) {
-        mh1 = h_block;
-      };
-    });
-    $block1.height(mh1);
-
-    $block2.each(function () {
-      var h_block = parseInt($(this).height());
-      if(h_block > mh2) {
-        mh2 = h_block;
-      };
-    });
-    $block2.height(mh2);
-  }
 }
-//clients
-function home() {
-  var $slider = $('.home .banner'),
-      prevArrow = $slider.parents('.slider').find('.slider-button_prev'),
-      nextArrow = $slider.parents('.slider').find('.slider-button_next');
+//image-cover-box
+function cover() {
+  $('.cover-box').each(function() {
+    //set size
+    var th = $(this).height(),//box height
+        tw = $(this).width(),//box width
+        im = $(this).children('img'),//image
+        ih = im.height(),
+        iw = im.width();
+    if ((tw/th) >= (iw/ih)) {
+        im.addClass('ww').removeClass('wh');
+    } else {
+        im.addClass('wh').removeClass('ww');
+    }
+  });
+}
+//banner
+function banner() {
+  var $slider = $('.banner-slider__container');
 
-  $slider.on('init reInit afterChange', function(){
+  $slider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+    $('.banner-slider__current').text((currentSlide ? currentSlide : 0) + 1);
+    $('.banner-slider__count').text(slick.slideCount);
     lazy();
-  })
+  });
 
   $slider.slick({
     infinite: true,
@@ -119,32 +101,44 @@ function home() {
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: prevArrow,
-    nextArrow: nextArrow
+    prevArrow: '.banner-slider__prev',
+    nextArrow: '.banner-slider__next'
   });
 }
-//reviews
-function reviews() {
-  var $slider = $('.reviews__slider'),
-      prevArrow = $slider.parents('.slider').find('.slider-button_prev'),
-      nextArrow = $slider.parents('.slider').find('.slider-button_next');
 
-  $slider.on('init reInit afterChange', function(){
+//gallery
+function gallery() {
+  var $slider = $('.gallery-slider__container');
+  $slider.on('afterChange', function(event){
     lazy();
-  })
-
+  });
   $slider.slick({
     infinite: true,
     dots: false,
     arrows: true,
+    fade: false,
     speed: 400,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    prevArrow: prevArrow,
-    nextArrow: nextArrow,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    prevArrow: '.gallery-slider__prev',
+    nextArrow: '.gallery-slider__next',
     responsive: [
       {
-        breakpoint: 576,
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -152,4 +146,57 @@ function reviews() {
       }
     ]
   });
+}
+
+//popup
+function popup() {
+  var selector = '.gallery-slide:not(.slick-cloned)';
+
+  // Skip cloned elements
+  $().fancybox({
+    selector : selector,
+    backFocus : false,
+    loop: true
+  });
+
+  $(document).on('click', '.slick-cloned', function(e) {
+    $(selector)
+      .eq( ( $(e.currentTarget).attr("data-slick-index") || 0) % $(selector).length )
+      .trigger("click.fb-start", {
+        $trigger: $(this)
+      });
+
+    return false;
+  });
+  $('body').removeClass('compensate-for-scrollbar');
+}
+
+//scroll
+function scrollpage() {
+  var $scrollTopbutton = $('.up__button'),
+      $scrolLink = $('.scroll-button'),
+      $body = $("html, body");
+
+  $scrollTopbutton.on('click', function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+  })
+
+  scroll();
+  $(window).scroll(function(){
+    scroll();
+  });
+  $scrolLink.on('click', function (event) {
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    
+    event.preventDefault();
+
+    $('body,html').animate({scrollTop: top}, 400);
+      $body.addClass("in-scroll");
+      setTimeout(function() {
+        $body.removeClass("in-scroll");
+      }, 400)
+  })
 }

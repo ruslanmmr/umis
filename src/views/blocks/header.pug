@@ -1,48 +1,57 @@
 header.header
-  .container
-    .header__container
+  .header__container
+    .container
       .header__content
         .logo
           a(href="#").logo__link
             img(data-src="img/logos/logo.png", alt="").lazy
           .logo__description 
-            span IP телефонии<br> комплексные решения
+            span Управление<br> Механизации<br> и Строительства
         .header__items
+          .header__contact-item
+            a(href="#").contact-item.contact-item_phone
+              i.fas.fa-phone
+              | Обратный звонок
           .header__contact-item
             a(href="#").contact-item
               i.fas.fa-envelope
-              | info@sipmaster.ru
-          .header__contact-item
-            a(href="#").contact-item.contact-item_number
-              i.fas.fa-mobile-alt
-              | +7 (495) 204-12-15
-          a(href="#").btn.header__btn Личный кабинет
+              | info@umis-himki.ru
+          .header__contact-item.header__contact-item_block
+            .contact-block
+              span.contact-block__title Горячая линия
+              a(href="tel:84957397301") 8 (495) 739-73-01
+          .header__contact-item.header__contact-item_block
+            .contact-block
+              span.contact-block__title По вопросам аренды
+              a(href="tel:84957397306") 8 (495) 739-73-06
           a(href="#").small-btn.nav-open
             i.fas.fa-bars
-      .header__nav
-        nav.nav
-          .nav__head
-            a(href="#").btn Личный кабинет
-            a(href="tel:74952041215").small-btn.small-btn_tel
-              i.fas.fa-phone
-            a(href="#").small-btn.nav__close
-              i.fas.fa-times
-          ul.nav__list.sl--scrollable
-            li.nav__item
-              a(href="#").nav__link О КОМПАНИИ
-            li.nav__item
-              a(href="#").nav__link ТАРИФЫ                  
-            li.nav__item
-              a(href="#").nav__link ВИРТУАЛЬНЫЙ НОМЕР
-            li.nav__item
-              a(href="#").nav__link ПОДДЕРЖКА ASTERISK
-            li.nav__item
-              a(href="#").nav__link ВИРТУАЛЬНАЯ АТС
-            li.nav__item
-              a(href="#").nav__link СОФТФОН
-            li.nav__item
-              a(href="#").nav__link КОНТАКТЫ
-      //
-      .overlay
+  .header__nav
+    .container
+      nav.nav
+        .nav__head
+          a(href="tel:74952041215").small-btn.small-btn_tel
+            i.fas.fa-phone
+          a(href="#").small-btn.nav__close
+            i.fas.fa-times
+        ul.nav__list.sl--scrollable
+          li.nav__item
+            a(href="#").nav__link Главная 
+          li.nav__item
+            a(href="#").nav__link Наши услуги                  
+          li.nav__item
+            a(href="#about").nav__link.scroll-button О компании
+              i.fas.fa-chevron-down
+          li.nav__item
+            a(href="#").nav__link Прайс-лист
+          li.nav__item
+            a(href="#").nav__link Фотогалерея 
+          li.nav__item
+            a(href="#").nav__link Контакты
+        a(href="#").nav__button
+          i.fas.fa-clipboard-list
+          span Сделать заказ
+    //
+    .overlay
 
-        
+    

@@ -1,19 +1,35 @@
 @import "./partials/fonts";
 
+$contrast-color: #efeeee;
+$main-color: #dd3933;
 body {
   text-rendering: optimizeSpeed;
   font: 16px "Circe", sans-serif;
-  color: #000;
+  color: #3e3e3e;
   min-width: 320px;
   position: relative;
-  line-height: 1.4;
-  background-color: #f5f5f5;
+  line-height: 1.25;
 }
 p {
-  margin: 0;
-  &:not(:last-child) {
-    margin-bottom: 1em;
+  margin: 0 0 1em 0;
+  &:last-child {
+    margin: 0;
   }
+}
+h1, h2, h3, h4, h5 {
+  color: #000;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+}
+h2 {
+  font-size: 50px;
+}
+h4 {
+  font-size: 28px;
+}
+h5 {
+  font-size: 20px;
 }
 .wrapper {
   overflow: hidden;
@@ -54,24 +70,42 @@ p {
 }
 .contact-item {
   text-decoration: none;
-  color: #000;
-  font-size: 14px;
+  color: #666666;
   line-height: 18px;
   display: block;
   position: relative;
   padding-left: 30px;
-  &_number {
-    font-size: 16px;
+  text-decoration: underline;
+  &_phone {
+    i {
+      transform: rotate(90deg);
+    }
   }
   i {
     position: absolute;
     left: 0;
     font-size: 18px;
-    color: #008021;
+    color: #ff2e28;
     line-height: 16px;
     width: 18px;
     display: flex;
     justify-content: center;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+.contact-block {
+  &__title {
+    font-size: 14px;
+    color: #666666;
+    display: block;
+    margin-bottom: 4px;
+  }
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
   }
 }
 .btn {
@@ -126,7 +160,7 @@ p {
   cursor: pointer;
   color: #0e0e0e;
   transition: 0.3s;
-  color: #008021;
+  color: #dc322c;
   &_tel {
     font-size: 22px;
   }
@@ -139,65 +173,55 @@ p {
   outline: none;
 }
 .title {
+  color: #000;
   margin: 0;
-  font-size: 32px;
-  font-weight: normal;
+  font-weight: 700;
+  position: relative;
+  padding-left: 0.8em;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 48%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 4px;
+    background-color: #dc322c;
+  }
 }
-.sub-title {
-  color: #636363;
-  font-size: 16px;
+.cover-box {
+  position: relative;
+  img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.wh {
+  height: auto;
+  width: 100%;
+}
+.ww {
+  height: 100%;
+  width: auto;
 }
 .slider {
   position: relative;
 }
-.slider-button {
-  height: 65px;
-  width: 65px;
-  border: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  font-size: 24px;
-  color: #4a4a4a;
-  cursor: pointer;
-  transition: 0.3s;
-  outline: none;
-  &:hover {
-    opacity: 0.8;
-  }
-}
-.slider-nav {
-  display: flex;
-  .slider-button {
-    &:first-child {
-      margin-right: 15px;
-    }
-  }
-}
-.category-item {
-  font-size: 14px;
-  display: inline-block;
-  border-bottom: 2px solid #008021;
-  padding-bottom: 3px;
-}
 
 
-@media all and(max-width: 992px) {
-  .slider-button {
-    width: 60px;
-    height: 60px;
-  }
-}
 @media all and(max-width: 576px) {
-  .btn_style3 i {
-    margin-left: 20px;
-  }
   .title {
     font-size: 28px;
   }
 }
 
 @import "./partials/header";
+@import "./partials/banner";
+@import "./partials/about";
+@import "./partials/services";
+@import "./partials/gallery";
 @import "./partials/footer";
