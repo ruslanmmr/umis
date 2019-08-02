@@ -33,8 +33,8 @@ a {
 }
 .lazy {
   display: block;
-  min-width: 1px;
-  min-height: 1px;
+  width: 100px;
+  height: auto;
 }
 
 .cover-box {

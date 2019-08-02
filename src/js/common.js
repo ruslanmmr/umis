@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  lazy();
   nav();
-  banner()
+  banner();
+  //lazy();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -67,16 +67,18 @@ function lazy() {
       var box = element.parent();
       if(!box.hasClass('cover-box_size-auto')) {
         var boxH = box.height(),
-          boxW = box.width(),
-          imgH = element.height(),
-          imgW = element.width();
-        if ((boxW / boxH) >= (imgW / imgH)) {
+            boxW = box.width();
+        setTimeout(function() {
+          var imgH = element.height(),
+              imgW = element.width();
+          if ((boxW / boxH) >= (imgW / imgH)) {
           element.addClass('ww').removeClass('wh');
-        } else {
-          element.addClass('wh').removeClass('ww');
-        }
+          } else {
+            element.addClass('wh').removeClass('ww');
+          }
+          element.addClass('visible');
+        }, 100)
       }
-      element.addClass('visible');
     }
   });
 }
@@ -103,6 +105,7 @@ function banner() {
 
   $slider.on('init', function(event, slick, currentSlide, nextSlide){
     pag();
+    lazy();
   });
 
   $slider.slick({
