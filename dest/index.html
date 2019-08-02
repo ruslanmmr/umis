@@ -3,246 +3,191 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>umis</title>
+    <title>Pimon</title>
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--styles for all pages-->
     <link rel="stylesheet" href="styles/libs.min.css">
     <link rel="stylesheet" href="styles/common.min.css">
   </head>
-  <body class="compensate-for-scrollbar">
+  <body>
     <div class="wrapper">
       <div class="wrapper__container">
-        <header class="header">
-          <div class="header__container">
-            <div class="container">
-              <div class="header__content">
-                <div class="logo"><a class="logo__link" href="#"><img class="lazy" data-src="img/logos/logo.png" alt=""></a>
-                  <div class="logo__description"> <span>Управление<br> Механизации<br> и Строительства</span></div>
-                </div>
-                <div class="header__items">
-                  <div class="header__contact-item"><a class="contact-item contact-item_phone" href="#"><i class="fas fa-phone"></i>Обратный звонок</a></div>
-                  <div class="header__contact-item"><a class="contact-item" href="#"><i class="fas fa-envelope"></i>info@umis-himki.ru</a></div>
-                  <div class="header__contact-item header__contact-item_block">
-                    <div class="contact-block"><span class="contact-block__title">Горячая линия</span><a href="tel:84957397301">8 (495) 739-73-01</a></div>
+        <div class="wrapper__top">
+          <header class="header">
+            <div class="header__top">
+              <div class="container">
+                <div class="header__content">
+                  <div class="header__items">
+                    <div class="header__contact-item"><a class="contact-item" href="#"><i class="fas fa-envelope"></i>info@pimon.ru</a></div>
+                    <div class="header__contact-item"><a class="contact-item contact-item_phone" href="#"><i class="fas fa-mobile-alt"></i>8 (800) 555-00-11</a></div>
                   </div>
-                  <div class="header__contact-item header__contact-item_block">
-                    <div class="contact-block"><span class="contact-block__title">По вопросам аренды</span><a href="tel:84957397306">8 (495) 739-73-06</a></div>
-                  </div><a class="small-btn nav-open" href="#"><i class="fas fa-bars"></i></a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="header__nav">
-            <div class="container">
-              <nav class="nav">
-                <div class="nav__head"><a class="small-btn small-btn_tel" href="tel:74952041215"><i class="fas fa-phone"></i></a><a class="small-btn nav__close" href="#"><i class="fas fa-times"></i></a></div>
-                <ul class="nav__list sl--scrollable">
-                  <li class="nav__item"><a class="nav__link" href="#">Главная </a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Наши услуги                  </a></li>
-                  <li class="nav__item"><a class="nav__link scroll-button" href="#about">О компании<i class="fas fa-chevron-down"></i></a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Прайс-лист</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Фотогалерея </a></li>
-                  <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-                </ul><a class="nav__button" href="#"><i class="fas fa-clipboard-list"></i><span>Сделать заказ</span></a>
-              </nav>
-            </div>
-            <!---->
-            <div class="overlay"></div>
-          </div>
-        </header>
-        <main class="main">
-          <div class="banner">
-            <div class="container">
-              <div class="banner-slider">
-                <div class="banner-slider__nav">
-                  <button class="banner-slider__button banner-slider__prev"><i class="fas fa-chevron-left"></i></button>
-                  <div class="banner-slider__pag"><span class="banner-slider__current">0</span><span class="banner-slider__count">0</span></div>
-                  <button class="banner-slider__button banner-slider__next"><i class="fas fa-chevron-right"></i></button>
+            <div class="header__bottom">
+              <div class="container"><a class="logo" href="#"><img class="logo__image" src="img/logos/logo.svg" alt=""></a><a class="nav-open" href="#"><i class="fas fa-bars"></i></a>
+                <div class="header__nav">
+                  <nav class="nav">
+                    <div class="nav__head"><a class="small-btn" href="#"><i class="fas fa-phone"></i></a><a class="nav-close" href="#"><i class="fas fa-times"></i></a></div>
+                    <div class="nav__content">
+                      <ul class="nav__list sl--scrollable">
+                        <li class="nav__item"><a class="nav__link" href="#">Главная </a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Продукция                  </a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Сервис</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Каталоги</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Фото</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Статьи</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                      </ul>
+                      <ul class="nav__list">
+                        <li class="nav__item"><a class="contact-item" href="mailto:info@pimon.ru"><i class="fas fa-envelope"></i>info@pimon.ru</a></li>
+                        <li class="nav__item"><a class="contact-item contact-item_phone" href="tel:88005550011"><i class="fas fa-mobile-alt"></i>8 (800) 555-00-11</a></li>
+                      </ul>
+                    </div><a class="button button_type1" href="#"><i class="fas fa-phone"></i><span>Заказать звонок</span></a>
+                  </nav>
                 </div>
-                <div class="banner-slider__container">
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </header>
+          <main class="main">
+            <div class="banner">
+              <div class="container"> 
+                <div class="banner__slider">
                   <div class="banner-slide">
-                    <div class="banner-slide__container">
-                      <div class="banner-slide__content">
-                        <h2 class="title banner-slide__title">Ремонт дорог<br> и их строительство</h2>
-                        <p class="banner-slide__text">В процессе эксплуатации автомобильные дороги изнашиваются, повреждаются и нуждается в ремонте. Заказать дорожно-ремонтные работы можно у нас.</p><a class="banner-slide__link" href="#">Заказть ремонт дороги</a>
-                      </div>
-                      <div class="banner-slide__image"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""></div>
-                    </div>
+                    <div class="banner-slide__container cover-box"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""><span class="banner-slide__title">Cладкие цены<br> на определённые<br>  виды продукции</span><a class="button button_type2" href="#">Смотреть все продукты</a></div>
                   </div>
                   <div class="banner-slide">
-                    <div class="banner-slide__container">
-                      <div class="banner-slide__content">
-                        <h2 class="title banner-slide__title">Ремонт дорог</h2>
-                        <p class="banner-slide__text">В процессе эксплуатации автомобильные дороги изнашиваются, повреждаются и нуждается в ремонте. Заказать дорожно-ремонтные работы можно у нас.</p><a class="banner-slide__link" href="#">Заказть ремонт дороги</a>
-                      </div>
-                      <div class="banner-slide__image"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""></div>
+                    <div class="banner-slide__container cover-box"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""><span class="banner-slide__title">Номер 2</span><a class="button button_type2" href="#">Смотреть все продукты</a></div>
+                  </div>
+                  <div class="banner-slide">
+                    <div class="banner-slide__container cover-box"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""><span class="banner-slide__title">Номер 3</span><a class="button button_type2" href="#">Смотреть все продукты</a></div>
+                  </div>
+                  <div class="banner-slide">
+                    <div class="banner-slide__container cover-box"><img class="lazy" data-src="img/banner/banner-image.jpg" alt=""><span class="banner-slide__title">Номер 4</span><a class="button button_type2" href="#">Смотреть все продукты</a></div>
+                  </div>
+                </div>
+                <ul class="banner__nav-list">
+                  <li class="banner__nav-item"><a class="banner__nav-link" href="#"><img src="img/icons/hormann.png" alt=""></a></li>
+                  <li class="banner__nav-item"><a class="banner__nav-link" href="#"><span>ВОРОТА </span></a></li>
+                  <li class="banner__nav-item"><a class="banner__nav-link" href="#"><span>ДВЕРИ</span></a></li>
+                  <li class="banner__nav-item"><a class="banner__nav-link" href="#"><span>АВТОМАТИКА</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <section class="section product">
+              <div class="container">
+                <h5 class="section__title">Наша продукция</h5>
+                <div class="product__container row">
+                  <div class="product-block col-xl-4 col-lg-6 col-12"><a class="product-block__container t-size-18" href="#">
+                      <div class="product-block__image cover-box cover-box_contain"><img class="lazy" data-src="img/banner/product1.jpg" alt=""></div><span class="product-block__title">Бытовые ворота<br> и автоматика</span></a></div>
+                  <div class="product-block col-xl-4 col-lg-6 col-12"><a class="product-block__container t-size-18" href="#">
+                      <div class="product-block__image cover-box cover-box_contain"><img class="lazy" data-src="img/banner/product2.jpg" alt=""></div><span class="product-block__title">Двери Hormann</span></a></div>
+                  <div class="product-block col-xl-4 col-lg-6 col-12"><a class="product-block__container t-size-18" href="#">
+                      <div class="product-block__image cover-box cover-box_contain"><img class="lazy" data-src="img/banner/product3.jpg" alt=""></div><span class="product-block__title">Электроприводы въездных ворот</span></a></div>
+                  <div class="product-block col-xl-4 col-lg-6 col-12"><a class="product-block__container t-size-18" href="#">
+                      <div class="product-block__image cover-box cover-box_contain"><img class="lazy" data-src="img/banner/product4.jpg" alt=""></div><span class="product-block__title">Перегрузочная техника Hormann</span></a></div>
+                  <div class="product-block col-xl-4 col-lg-6 col-12"><a class="product-block__container t-size-18" href="#">
+                      <div class="product-block__image cover-box cover-box_contain"><img class="lazy" data-src="img/banner/product5.jpg" alt=""></div><span class="product-block__title">Промышленные ворота и автоматика</span></a></div>
+                </div>
+              </div>
+            </section>
+            <section class="section gallery">
+              <div class="container">
+                <h5 class="section__title">Галерея продукции </h5>
+                <div class="gallery__container row">
+                  <div class="gallery__section col-xl-8 col-sm-12">
+                    <div class="row">
+                      <div class="gallery-item size1 col-xl-12"><a class="gallery-item__container" href="#">
+                          <div class="cover-box"><img class="lazy" data-src="img/banner/image1.jpg" alt=""></div><span class="gallery-item__title t-size-24">Гаражные ворота</span></a></div>
+                      <div class="gallery-item size2 col-xl-6 col-12"><a class="gallery-item__container" href="#">
+                          <div class="cover-box"><img class="lazy" data-src="img/banner/image3.jpg" alt=""></div><span class="gallery-item__title">Приводы HORMAN</span></a></div>
+                      <div class="gallery-item size2 col-xl-6 col-12"><a class="gallery-item__container" href="#">
+                          <div class="cover-box"><img class="lazy" data-src="img/banner/image4.jpg" alt=""></div><span class="gallery-item__title">Двери HORMAN</span></a></div>
+                    </div>
+                  </div>
+                  <div class="gallery__section col-xl-4 col-sm-12">
+                    <div class="row">
+                      <div class="gallery-item size2 col-xl-12 col-sm-6 col-12"><a class="gallery-item__container" href="#">
+                          <div class="cover-box"><img class="lazy" data-src="img/banner/image2.jpg" alt=""></div><span class="gallery-item__title">Ворота и автоматика</span></a></div>
+                      <div class="gallery-item size1 col-xl-12 col-sm-6 col-12"><a class="gallery-item__container" href="#">
+                          <div class="cover-box"><img class="lazy" data-src="img/banner/image5.jpg" alt=""></div><span class="gallery-item__title">Автоматика</span></a></div>
                     </div>
                   </div>
                 </div>
               </div>
+            </section>
+            <section class="section about">
+              <div class="container">
+                <div class="about__container row">
+                  <div class="about__section col-xl-7 col-sm-12">
+                    <h5 class="section__title">О нас и нашей компании</h5>
+                    <p>Автоматические ворота производства Hormann (Германия) — это современные, продуманные технологичные изделия, которые, кроме всех конструктивных преимуществ, могут служить украшением фасада здания, позволяя подобрать и мотив полотна под любой интерьер и экстерьер. Большинство владельцев гаражей выбирает автоматические гаражные ворота Hormann по причине их устойчивости к взлому и надежной антивандальной защиты.</p>
+                    <p>Кроме того, автоматика позволяет экономить время на открывание и закрывание гаражных ворот, а при утере или отказе пульта ДУ гаражные ворота легко открыть вручную. У нас вы можете купить продукцию этой фирмы на выгодных условиях!</p>
+                  </div>
+                  <div class="about__section col-xl-5 col-sm-12">
+                    <h5 class="section__title">Почему мы?</h5>
+                    <div class="why-we">
+                      <ul class="why-we__list row">
+                        <li class="why-we__item col-xl-12 col-sm-6 col-12">
+                          <div class="why-we__icon"><img src="img/icons/shield.svg" alt=""></div><span class="why-we__text">10 лет гарантии на всю продукцию</span>
+                        </li>
+                        <li class="why-we__item col-xl-12 col-sm-6 col-12">
+                          <div class="why-we__icon"><img src="img/icons/time-and-date.svg" alt=""></div><span class="why-we__text">Установка + обслуживание в течении 1 года со дня установки</span>
+                        </li>
+                        <li class="why-we__item col-xl-12 col-sm-6 col-12">
+                          <div class="why-we__icon"><img src="img/icons/repairing-service.svg" alt=""></div><span class="why-we__text">Мы даем 2 года гарантии на установку всех видов изделий</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+        <div class="footer">
+          <div class="container">
+            <div class="footer__container row">
+              <div class="footer__section col-xl-3 col-md-4 col-12"><a class="footer-logo" href="#"><img class="footer-logo__image" src="img/logos/logo-footer.svg" alt=""><span class="footer-logo__text">ООО «Поставка и монтаж»</span></a>
+                <ul class="footer__info-list">
+                  <li>Россия, Москва, Ленина, дом 22, офис 351</li>
+                  <li>Время работы: пн-пт с 9:00  до 18:00</li>
+                </ul>
+              </div>
+              <div class="footer__section col-xl-3 col-md-4 col-6">
+                <div class="footer__nav"><span class="footer__nav-title">Полезная информация </span>
+                  <ul class="footer__nav-list">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Политика конфидициальности</a></li>
+                    <li><a href="#">Как закзать </a></li>
+                    <li><a href="#">Новости </a></li>
+                    <li><a href="#">Статьи </a></li>
+                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a href="#">Сервис</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__section col-xl-3 col-md-4 col-6">
+                <div class="footer__nav"><span class="footer__nav-title">Каталог и услуги</span>
+                  <ul class="footer__nav-list">
+                    <li><a href="#">Бытовые ворота и автоматика</a></li>
+                    <li><a href="#">Электроприводы въездных ворот </a></li>
+                    <li><a href="#">Промышленные ворота и автоматика</a></li>
+                    <li><a href="#">Перегрузочная техника Hormann </a></li>
+                    <li><a href="#">Двери Hormann</a></li>
+                    <li><a href="#">Установка дверей</a></li>
+                    <li><a href="#">Установка приаодов</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__section footer__section_contacts col-xl-3 col-md-12">
+                <div class="footer__contacts"><a class="contact-item contact-item_phone" href="#"><i class="fas fa-mobile-alt"></i>8 (800) 555-00-11</a><a class="contact-item" href="#"><i class="fas fa-envelope"></i>info@pimon.ru</a><a class="button button_type1" href="#"><i class="fas fa-phone"></i><span>Заказать звонок</span></a></div>
+              </div><span class="footer__copy col-xl-3 col-md-12">© 2007-2019 г., ООО «Поставка и монтаж» </span>
             </div>
           </div>
-          <section class="services">
-            <div class="container">
-              <h4 class="title services__title">Наши услуги</h4>
-              <div class="services__container row">
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico1.svg" alt=""></div>
-                      <h5 class="services-block__title">Ремонт и<br> строительство дорог</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico2.svg" alt=""></div>
-                      <h5 class="services-block__title">Благоустройство<br> территорий</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico3.svg" alt=""></div>
-                      <h5 class="services-block__title">Строительно-монтажные<br> работы</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p> Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico4.svg" alt=""></div>
-                      <h5 class="services-block__title">Отделочные<br> работы</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico5.svg" alt=""></div>
-                      <h5 class="services-block__title">Кровельные<br> работы</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico6.svg" alt=""></div>
-                      <h5 class="services-block__title">Вывоз строительного<br> мусора</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico7.svg" alt=""></div>
-                      <h5 class="services-block__title">Производство<br> бетона</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico8.svg" alt=""></div>
-                      <h5 class="services-block__title">Продажа песка, щебня,<br> асфальтовой крошки</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="services-block col">
-                  <div class="services-block__container">
-                    <div class="services-block__head">
-                      <div class="services-block__icon cover-box"><img class="lazy" data-src="img/icons/ico9.svg" alt=""></div>
-                      <h5 class="services-block__title">Производство<br> мебели</h5>
-                    </div>
-                    <div class="services-block__content">
-                      <p>Высокое качество ремонта дорог и низкие цены обеспечиваются применением всего спектра собственной ремонтной техники и прямыми контактами.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div class="about" id="about">
-            <div class="container">
-              <div class="about__container">
-                <h4 class="title about__title">О компании</h4>
-                <p>ООО «Управление Механизации и Строительства»  образованно в 1995 году, сегодня это динамично развивающаяся организация, которая успешно и продуктивно работает на рынке дорожного строительства 17 лет. С 2009г.  ООО «УМиС» вступила СРО, тем самым получив права и преимущества участника СРО, продлила в очередной раз срок действия Сертификата Соответствия ISO9000.</p>
-                <p>Мы производим работы с применением современных строительных материалов и технологий. Компания владеет собственным парком современной спецтехники ведущих мировых марок, за счет чего обеспечивается высокое качество работ, соблюдение технологий строительства дорог, а также высокая производительность. Постоянный и проверенный коллектив высококвалифицированных сотрудников является для фирмы гарантией качества выполняемой работы. Наши специалисты постоянно повышают свой профессиональный уровень, проходя профильное обучение и сертификацию.</p>
-                <p>Сметная документация составляется на основании сборников единых районных единичных расценок на строительные конструкции и работы Госстроя РФ в ценах 2001г. с применением индексов пересчета в цены текущего года.</p>
-                <p>Постоянно отслеживая потребности рынка, фирма ООО «УМиС»  совершенствует технологии предоставляемых нами услуг, тем самым, удовлетворяя потребности не просто рынка в целом, но и каждого клиента в отдельности.</p>
-                <p>Двигаться в ногу со временем нам помогает обмен опыта с предприятиями занятыми в области дорожного строительства. Наша компания проводит взвешенную тарифную политику, устанавливая для заказчиков цены. К каждому клиенту в рамках договорных отношений применяется индивидуальный подход.</p>
-              </div>
-            </div>
-          </div>
-          <div class="gallery">
-            <div class="container">
-              <div class="gallery-slider">
-                <div class="gallery-slider__head">
-                  <h4 class="title gallery-slider__title">Фото наших работ</h4>
-                  <div class="gallery-slider__nav">
-                    <button class="gallery-slider__button gallery-slider__prev"><i class="fas fa-chevron-left"></i></button><span></span>
-                    <button class="gallery-slider__button gallery-slider__next"><i class="fas fa-chevron-right"></i></button>
-                  </div>
-                </div>
-                <div class="gallery-slider__container"><a class="gallery-slide" href="img/banner/slide1.jpg" data-fancybox="gallery"><img class="lazy" data-src="img/banner/slide1.jpg" alt=""><span>Увеличить</span></a><a class="gallery-slide" href="img/banner/slide2.jpg" data-fancybox="gallery"><img class="lazy" data-src="img/banner/slide2.jpg" alt=""><span>Увеличить</span></a><a class="gallery-slide" href="img/banner/slide3.jpg" data-fancybox="gallery"><img class="lazy" data-src="img/banner/slide3.jpg" alt=""><span>Увеличить</span></a><a class="gallery-slide" href="img/banner/slide4.jpg" data-fancybox="gallery"><img class="lazy" data-src="img/banner/slide4.jpg" alt=""><span>Увеличить</span></a><a class="gallery-slide" href="img/banner/slide3.jpg" data-fancybox="gallery"><img class="lazy" data-src="img/banner/slide3.jpg" alt=""><span>Увеличить</span></a></div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <footer class="footer">
-          <div class="footer__section">
-            <div class="container">
-              <div class="footer__content row">
-                <div class="logo footer__logo col"><a class="logo__link" href="#"><img class="lazy" data-src="img/logos/logo.png" alt=""></a>
-                  <div class="logo__description"> <span>Управление Механизации<br> и Строительства</span></div>
-                </div>
-                <div class="footer__item footer__item_style2 col"><i class="fas fa-phone"></i>
-                  <div class="contact-block"><span class="contact-block__title">Горячая линия</span><a href="tel:84957397301">8 (495) 739-73-01</a></div>
-                </div>
-                <div class="footer__item footer__item_style2 col"><i class="fas fa-phone"></i>
-                  <div class="contact-block"><span class="contact-block__title">По вопросам аренды</span><a href="tel:84957397306">8 (495) 739-73-06</a></div>
-                </div>
-                <div class="footer__item col"><a class="contact-item" href="#"><i class="fas fa-envelope"></i>info@umis-himki.ru</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__section">
-            <div class="container">
-              <div class="footer__content row">
-                <div class="copy col">&copy 2019, Все права сохранены. Копирование материалов без согласия администрации запрещено</div>
-                <div class="up col">
-                  <button class="up__button"><i class="fas fa-chevron-up"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

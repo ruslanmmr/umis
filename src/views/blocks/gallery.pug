@@ -1,27 +1,34 @@
-.gallery
+section.section.gallery
   .container
-    .gallery-slider
-      .gallery-slider__head
-        h4.title.gallery-slider__title Фото наших работ
-        .gallery-slider__nav
-          button.gallery-slider__button.gallery-slider__prev
-            i.fas.fa-chevron-left
-          span
-          button.gallery-slider__button.gallery-slider__next
-            i.fas.fa-chevron-right
-      .gallery-slider__container
-        a(href="img/banner/slide1.jpg" data-fancybox="gallery").gallery-slide
-          img(data-src="img/banner/slide1.jpg" alt="").lazy
-          span Увеличить
-        a(href="img/banner/slide2.jpg" data-fancybox="gallery").gallery-slide
-          img(data-src="img/banner/slide2.jpg", alt="").lazy
-          span Увеличить
-        a(href="img/banner/slide3.jpg" data-fancybox="gallery").gallery-slide
-          img(data-src="img/banner/slide3.jpg", alt="").lazy
-          span Увеличить
-        a(href="img/banner/slide4.jpg" data-fancybox="gallery").gallery-slide
-          img(data-src="img/banner/slide4.jpg", alt="").lazy
-          span Увеличить
-        a(href="img/banner/slide3.jpg" data-fancybox="gallery").gallery-slide
-          img(data-src="img/banner/slide3.jpg", alt="").lazy
-          span Увеличить
+    h5.section__title Галерея продукции 
+    .gallery__container.row
+      .gallery__section.col-xl-8.col-sm-12
+        .row
+          .gallery-item.size1.col-xl-12
+            a(href="#").gallery-item__container
+              .cover-box
+                img(data-src="img/banner/image1.jpg", alt="").lazy
+              span.gallery-item__title.t-size-24 Гаражные ворота
+          .gallery-item.size2.col-xl-6.col-12
+            a(href="#").gallery-item__container
+              .cover-box
+                img(data-src="img/banner/image3.jpg", alt="").lazy
+              span.gallery-item__title Приводы HORMAN
+          .gallery-item.size2.col-xl-6.col-12
+            a(href="#").gallery-item__container
+              .cover-box
+                img(data-src="img/banner/image4.jpg", alt="").lazy
+              span.gallery-item__title Двери HORMAN
+      .gallery__section.col-xl-4.col-sm-12
+        .row
+          .gallery-item.size2.col-xl-12.col-sm-6.col-12
+            a(href="#").gallery-item__container
+              .cover-box
+                img(data-src="img/banner/image2.jpg", alt="").lazy
+              span.gallery-item__title Ворота и автоматика
+          .gallery-item.size1.col-xl-12.col-sm-6.col-12
+            a(href="#").gallery-item__container
+              .cover-box
+                img(data-src="img/banner/image5.jpg", alt="").lazy
+              span.gallery-item__title Автоматика
+              

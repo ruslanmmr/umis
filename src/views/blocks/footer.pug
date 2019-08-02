@@ -1,30 +1,59 @@
-footer.footer
-  .footer__section
-    .container
-      .footer__content.row
-        .logo.footer__logo.col
-          a(href="#").logo__link
-            img(data-src="img/logos/logo.png", alt="").lazy
-          .logo__description 
-            span Управление Механизации<br> и Строительства
-        .footer__item.footer__item_style2.col
-          i.fas.fa-phone
-          .contact-block
-            span.contact-block__title Горячая линия
-            a(href="tel:84957397301") 8 (495) 739-73-01
-        .footer__item.footer__item_style2.col
-          i.fas.fa-phone
-          .contact-block
-            span.contact-block__title По вопросам аренды
-            a(href="tel:84957397306") 8 (495) 739-73-06
-        .footer__item.col
+.footer
+  .container
+    .footer__container.row
+      .footer__section.col-xl-3.col-md-4.col-12
+        a(href="#").footer-logo
+          img(src="img/logos/logo-footer.svg", alt="").footer-logo__image
+          span.footer-logo__text ООО «Поставка и монтаж»
+        ul.footer__info-list
+          li Россия, Москва, Ленина, дом 22, офис 351
+          li Время работы: пн-пт с 9:00  до 18:00
+      .footer__section.col-xl-3.col-md-4.col-6
+        .footer__nav
+          span.footer__nav-title Полезная информация 
+          ul.footer__nav-list
+            li
+              a(href="#") О нас
+            li
+              a(href="#") Политика конфидициальности
+            li
+              a(href="#") Как закзать 
+            li
+              a(href="#") Новости 
+            li
+              a(href="#") Статьи 
+            li
+              a(href="#") Фотогалерея
+            li
+              a(href="#") Сервис
+      .footer__section.col-xl-3.col-md-4.col-6
+        .footer__nav
+          span.footer__nav-title Каталог и услуги
+          ul.footer__nav-list
+            li
+              a(href="#") Бытовые ворота и автоматика
+            li
+              a(href="#") Электроприводы въездных ворот 
+            li
+              a(href="#") Промышленные ворота и автоматика
+            li
+              a(href="#") Перегрузочная техника Hormann 
+            li
+              a(href="#") Двери Hormann
+            li
+              a(href="#") Установка дверей
+            li
+              a(href="#") Установка приаодов
+      .footer__section.footer__section_contacts.col-xl-3.col-md-12
+        .footer__contacts
+          a(href="#").contact-item.contact-item_phone
+            i.fas.fa-mobile-alt
+            | 8 (800) 555-00-11
           a(href="#").contact-item
             i.fas.fa-envelope
-            | info@umis-himki.ru
-  .footer__section
-    .container
-      .footer__content.row
-        .copy.col &copy 2019, Все права сохранены. Копирование материалов без согласия администрации запрещено
-        .up.col
-          button.up__button
-            i.fas.fa-chevron-up
+            | info@pimon.ru
+          a(href="#").button.button_type1
+            i.fas.fa-phone
+            span Заказать звонок
+      span.footer__copy.col-xl-3.col-md-12 © 2007-2019 г., ООО «Поставка и монтаж» 
+

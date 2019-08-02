@@ -2,15 +2,16 @@ doctype html
 html(lang="ru")
   head
     include blocks/head
-  body.compensate-for-scrollbar
+  body
     .wrapper
       .wrapper__container
-        include blocks/header
-        main.main
-          include blocks/banner
-          include blocks/services
-          include blocks/about
-          include blocks/gallery
+        .wrapper__top
+          include blocks/header
+          main.main
+            include blocks/banner
+            include blocks/product
+            include blocks/gallery
+            include blocks/about
         include blocks/footer
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="js/libs.min.js")                  

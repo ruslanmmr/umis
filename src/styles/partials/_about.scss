@@ -1,17 +1,37 @@
 .about {
-  padding: 60px 0 40px 0;
-  position: relative;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: $contrast-color;
-    top: 0;
-    width: 100%;
-    height: calc(100% + 200px);
-    left: 0;
+  background-color: #fff;
+  padding: 0 0 120px 0;
+}
+.why-we {
+  &__list {
+    padding: 0;
+    list-style: none;
   }
-  &__title {
-    margin-bottom: 30px;;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    padding: 10px;
+    border: 3px solid #170e59;
+    margin-right: 20px;
+    img {
+      display: block;
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@media all and(max-width: 1200px) {
+  .about {
+    padding-bottom: 80px;
+  }
+}
+@media all and(max-width: 768px) {
+  .about__section {
+    &:first-child {
+      margin-bottom: 25px;
+    }
   }
 }

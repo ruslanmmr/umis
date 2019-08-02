@@ -1,0 +1,29 @@
+.product {
+  background-color: #fff;
+}
+.product-block {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover {
+      border-color: #392e88;
+    }
+  }
+  &__image {
+    width: 150px;
+    height: 130px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+}
+
+@media all and(max-width: 768px) {
+  .product-block__image {
+    width: 100px;
+    height: 100px;
+  }
+}

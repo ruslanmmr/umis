@@ -1,42 +1,28 @@
 @import "./partials/fonts";
 
-$contrast-color: #efeeee;
-$main-color: #dd3933;
+$color1: #392e88;
+$color2: #281e6e;
+$color3: #ff7e68;
+
 body {
   text-rendering: optimizeSpeed;
-  font: 16px "Circe", sans-serif;
-  color: #3e3e3e;
+  font: 16px "MuseoSansCyrl", sans-serif;
+  color: #100a3f;
   min-width: 320px;
+  background-color: #f4f6fc;
   position: relative;
-  line-height: 1.25;
-}
-p {
-  margin: 0 0 1em 0;
-  &:last-child {
-    margin: 0;
-  }
-}
-h1, h2, h3, h4, h5 {
-  color: #000;
-  line-height: 1.2;
-  font-weight: 700;
-  margin: 0;
-}
-h2 {
-  font-size: 50px;
-}
-h4 {
-  font-size: 28px;
-}
-h5 {
-  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 .wrapper {
   overflow: hidden;
-  min-height: 100vh;
   &__container {
     transition: transform .3s;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     &.active {
       transform: translateX(260px);
     }
@@ -46,13 +32,7 @@ h5 {
   position: relative;
   z-index: 1;
 }
-.slick-track {
-  display: flex;
-}
-.slick-slide {
-  float: none;
-  height: auto;
-}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -60,168 +40,17 @@ h5 {
   z-index: 2;
   padding: 0 15px;
 }
-.row {
-  margin: 0 -15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.col {
-  padding: 0 15px;
-}
-.contact-item {
-  text-decoration: none;
-  color: #666666;
-  line-height: 18px;
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  text-decoration: underline;
-  &_phone {
-    i {
-      transform: rotate(90deg);
-    }
-  }
-  i {
-    position: absolute;
-    left: 0;
-    font-size: 18px;
-    color: #ff2e28;
-    line-height: 16px;
-    width: 18px;
-    display: flex;
-    justify-content: center;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
-.contact-block {
-  &__title {
-    font-size: 14px;
-    color: #666666;
-    display: block;
-    margin-bottom: 4px;
-  }
-  a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
-  }
-}
-.btn {
-  border: 0;
-  outline: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 1em;
-  padding: 1em 2.2em;
-  border-radius: 3em;
-  text-align: center;
-  transition: background-color 0.3s;
-  background-color: #cfe2d4;
-  color: #000;
-  text-decoration: none;
-  transition: 0.3s;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  &:hover {
-    background-color: #94b4d5;
-  }
-  &_style2 {
-    background-color: #029127 !important;
-    color: #fff;
-    padding: 22px 46px;
-    &:hover {
-      box-shadow: 4px 13px 31px 0px rgba(0,0,0,0.21);
-    }
-  }
-  &_style3 {
-    padding-right: 22px;
-    i {
-      margin-left: 60px;
-      line-height: 1em;
-    }
-    &:hover {
-      background-color: #008021;
-      color: #fff;
-    }
-  }
-}
-.small-btn {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  font-size: 26px;
-  text-decoration: none;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  color: #0e0e0e;
-  transition: 0.3s;
-  color: #dc322c;
-  &_tel {
-    font-size: 22px;
-  }
-}
-.input {
-  height: 62px;
-  border: 0;
-  background-color: #d7d7d7;
-  border-radius: 62px;
-  outline: none;
-}
-.title {
-  color: #000;
-  margin: 0;
-  font-weight: 700;
-  position: relative;
-  padding-left: 0.8em;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 48%;
-    transform: translateY(-50%);
-    height: 90%;
-    width: 4px;
-    background-color: #dc322c;
-  }
-}
-.cover-box {
-  position: relative;
-  img {
-    position: absolute;
-    display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-.wh {
-  height: auto;
-  width: 100%;
-}
-.ww {
-  height: 100%;
-  width: auto;
-}
-.slider {
-  position: relative;
-}
 
 
 @media all and(max-width: 576px) {
-  .title {
-    font-size: 28px;
-  }
+  
 }
 
+@import "./partials/ui";
 @import "./partials/header";
-@import "./partials/banner";
-@import "./partials/about";
-@import "./partials/services";
+@import "./partials/product";
 @import "./partials/gallery";
+@import "./partials/about";
+@import "./partials/text";
+@import "./partials/banner";
 @import "./partials/footer";

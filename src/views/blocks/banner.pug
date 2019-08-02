@@ -1,29 +1,38 @@
 .banner
-  .container
-    .banner-slider
-      .banner-slider__nav
-        button.banner-slider__button.banner-slider__prev
-          i.fas.fa-chevron-left
-        .banner-slider__pag
-          span.banner-slider__current 0
-          span.banner-slider__count 0
-        button.banner-slider__button.banner-slider__next
-          i.fas.fa-chevron-right
-      .banner-slider__container
-        .banner-slide
-          .banner-slide__container
-            .banner-slide__content
-              h2.title.banner-slide__title Ремонт дорог<br> и их строительство
-              p.banner-slide__text В процессе эксплуатации автомобильные дороги изнашиваются, повреждаются и нуждается в ремонте. Заказать дорожно-ремонтные работы можно у нас.
-              a(href="#").banner-slide__link Заказть ремонт дороги
-            .banner-slide__image
-              img(data-src="img/banner/banner-image.jpg", alt="").lazy
-        .banner-slide
-          .banner-slide__container
-            .banner-slide__content
-              h2.title.banner-slide__title Ремонт дорог
-              p.banner-slide__text В процессе эксплуатации автомобильные дороги изнашиваются, повреждаются и нуждается в ремонте. Заказать дорожно-ремонтные работы можно у нас.
-              a(href="#").banner-slide__link Заказть ремонт дороги
-            .banner-slide__image
-              img(data-src="img/banner/banner-image.jpg", alt="").lazy
-      
+  .container  
+    .banner__slider
+      .banner-slide
+        .banner-slide__container.cover-box
+          img(data-src="img/banner/banner-image.jpg", alt="").lazy
+          span.banner-slide__title Cладкие цены<br> на определённые<br>  виды продукции
+          a(href="#").button.button_type2 Смотреть все продукты
+      .banner-slide
+        .banner-slide__container.cover-box
+          img(data-src="img/banner/banner-image.jpg", alt="").lazy
+          span.banner-slide__title Номер 2
+          a(href="#").button.button_type2 Смотреть все продукты
+      .banner-slide
+        .banner-slide__container.cover-box
+          img(data-src="img/banner/banner-image.jpg", alt="").lazy
+          span.banner-slide__title Номер 3
+          a(href="#").button.button_type2 Смотреть все продукты
+      .banner-slide
+        .banner-slide__container.cover-box
+          img(data-src="img/banner/banner-image.jpg", alt="").lazy
+          span.banner-slide__title Номер 4
+          a(href="#").button.button_type2 Смотреть все продукты
+    ul.banner__nav-list
+      li.banner__nav-item
+        a(href="#").banner__nav-link
+          img(src="img/icons/hormann.png", alt="")
+      li.banner__nav-item
+        a(href="#").banner__nav-link
+          span ВОРОТА 
+      li.banner__nav-item
+        a(href="#").banner__nav-link
+          span ДВЕРИ
+      li.banner__nav-item
+        a(href="#").banner__nav-link
+          span АВТОМАТИКА
+
+

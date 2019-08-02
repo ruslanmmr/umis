@@ -1,57 +1,57 @@
 header.header
-  .header__container
+  .header__top
     .container
       .header__content
-        .logo
-          a(href="#").logo__link
-            img(data-src="img/logos/logo.png", alt="").lazy
-          .logo__description 
-            span Управление<br> Механизации<br> и Строительства
         .header__items
-          .header__contact-item
-            a(href="#").contact-item.contact-item_phone
-              i.fas.fa-phone
-              | Обратный звонок
           .header__contact-item
             a(href="#").contact-item
               i.fas.fa-envelope
-              | info@umis-himki.ru
-          .header__contact-item.header__contact-item_block
-            .contact-block
-              span.contact-block__title Горячая линия
-              a(href="tel:84957397301") 8 (495) 739-73-01
-          .header__contact-item.header__contact-item_block
-            .contact-block
-              span.contact-block__title По вопросам аренды
-              a(href="tel:84957397306") 8 (495) 739-73-06
-          a(href="#").small-btn.nav-open
-            i.fas.fa-bars
-  .header__nav
+              | info@pimon.ru
+          .header__contact-item
+            a(href="#").contact-item.contact-item_phone
+              i.fas.fa-mobile-alt
+              | 8 (800) 555-00-11
+  .header__bottom
     .container
-      nav.nav
-        .nav__head
-          a(href="tel:74952041215").small-btn.small-btn_tel
+      a(href="#").logo
+        img(src="img/logos/logo.svg", alt="").logo__image
+      a(href="#").nav-open
+        i.fas.fa-bars
+      .header__nav
+        nav.nav
+          .nav__head
+            a(href="#").small-btn
+              i.fas.fa-phone
+            a(href="#").nav-close
+              i.fas.fa-times
+          .nav__content
+            ul.nav__list.sl--scrollable
+              li.nav__item
+                a(href="#").nav__link Главная 
+              li.nav__item
+                a(href="#").nav__link Продукция                  
+              li.nav__item
+                a(href="#").nav__link Сервис
+              li.nav__item
+                a(href="#").nav__link Каталоги
+              li.nav__item
+                a(href="#").nav__link Фото
+              li.nav__item
+                a(href="#").nav__link Статьи
+              li.nav__item
+                a(href="#").nav__link Контакты
+            ul.nav__list
+              li.nav__item
+                a(href="mailto:info@pimon.ru").contact-item
+                  i.fas.fa-envelope
+                  | info@pimon.ru
+              li.nav__item
+                a(href="tel:88005550011").contact-item.contact-item_phone
+                  i.fas.fa-mobile-alt
+                  | 8 (800) 555-00-11
+          a(href="#").button.button_type1
             i.fas.fa-phone
-          a(href="#").small-btn.nav__close
-            i.fas.fa-times
-        ul.nav__list.sl--scrollable
-          li.nav__item
-            a(href="#").nav__link Главная 
-          li.nav__item
-            a(href="#").nav__link Наши услуги                  
-          li.nav__item
-            a(href="#about").nav__link.scroll-button О компании
-              i.fas.fa-chevron-down
-          li.nav__item
-            a(href="#").nav__link Прайс-лист
-          li.nav__item
-            a(href="#").nav__link Фотогалерея 
-          li.nav__item
-            a(href="#").nav__link Контакты
-        a(href="#").nav__button
-          i.fas.fa-clipboard-list
-          span Сделать заказ
-    //
+            span Заказать звонок
     .overlay
 
     
