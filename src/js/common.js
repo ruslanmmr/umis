@@ -1,7 +1,7 @@
 $(document).ready(function () {
   nav();
   banner();
-  //lazy();
+  lazy();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
